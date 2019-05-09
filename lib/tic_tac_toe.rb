@@ -52,7 +52,7 @@ def turn(board)
     move(board, position, current_player(board))
     turn(board)
   end
-  
+
   display_board(board)
 end
 
@@ -113,13 +113,13 @@ def winner(board)
 end
 
 def play(board)
-  until over?(board) 
+  until over?(board)
      turn(board)
-  end 
+  end
   if won?(board)
-     winner(board) == "X" || winner(board) == "O" 
-     puts "Congratulations #{winner(board)}!" 
+     winner(board) == "X" || winner(board) == "O"
+     puts "Congratulations #{winner(board)}!"
   elsif draw?(board)
-     puts "Cats Game!" 
-  end 
+     puts "Cats Game!"
+  end
 end
