@@ -120,7 +120,7 @@ def play(board)
     over?(board)
   end
 
-  if winner(board)
+  if won?(board)
     puts "Congratulations"
   elsif draw?(board)
     puts "Better luck next time - game is a draw"
