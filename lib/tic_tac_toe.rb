@@ -49,7 +49,7 @@ def turn(board)
   user_input = gets.strip
   position = input_to_index(user_input)
   if valid_move?(board, position)
-    move(board, position, token)
+    move(board, position, token="X")
     display_board(board)
   else
     turn(board)
@@ -114,7 +114,6 @@ end
 
 def play(board)
   input = gets
-  token = "X"
   until over?(board) do
     turn(board)
     won?(board)
