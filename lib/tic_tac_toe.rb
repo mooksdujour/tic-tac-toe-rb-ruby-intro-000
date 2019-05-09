@@ -45,12 +45,12 @@ end
 
 def turn
   #puts "Please enter X or O"
-  token = gets.strip.upcase
+  #token = gets.strip.upcase
   puts "Please enter a number between 1 and 9"
-  input = gets.strip
-  position = input_to_index(input)
+  user_input = gets.strip
+  position = input_to_index(user_input)
   if valid_move?(board, position)
-    move(board, position, token)
+    move(board, position, "O")
     display_board(board)
   else
     turn
