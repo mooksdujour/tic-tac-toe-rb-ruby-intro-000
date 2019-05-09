@@ -44,13 +44,12 @@ def valid_move?(board, position)
 end
 
 def turn(board)
-  #puts "Please enter X or O"
-  token = "X" #gets.strip.upcase
+
   puts "Please enter a number between 1 and 9"
   user_input = gets.strip
   position = input_to_index(user_input)
   if valid_move?(board, position)
-    move(board, position, token)
+    move(board, position, token= "X")
     display_board(board)
   else
     turn(board)
