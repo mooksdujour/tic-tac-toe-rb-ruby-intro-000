@@ -114,6 +114,7 @@ end
 
 def play(board)
   input = gets
+  token = "X"
   until over?(board) do
     turn(board)
     won?(board)
