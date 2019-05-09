@@ -112,3 +112,19 @@ def winner(board)
     return board[won?(board)[0]]
   end
 end
+
+def play(board)
+
+  until over? do
+    turn
+    over?
+  end
+
+  if winner(board)
+    puts "Congratulations"
+  elsif draw?(board)
+    puts "Better luck next time - game is a draw"
+  else
+    puts "U Lose"
+  end
+end
