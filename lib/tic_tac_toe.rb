@@ -117,6 +117,9 @@ def play(board)
 
   until over?(board) do
     turn(board)
+    won?(board)
+    draw?(board)
+    full?(board)
     over?(board)
   end
 
