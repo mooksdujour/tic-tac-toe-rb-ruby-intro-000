@@ -115,7 +115,7 @@ end
 
 def play(board)
 
-  until over? do
+  until over?(board) do
     turn(board)
     over?(board)
   end
