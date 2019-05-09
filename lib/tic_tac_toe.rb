@@ -44,7 +44,7 @@ def valid_move?(board, position)
 end
 
 def turn
-  puts "Please enter X or O"
+  #puts "Please enter X or O"
   token = gets.strip.upcase
   puts "Please enter a number between 1 and 9"
   input = gets.strip
