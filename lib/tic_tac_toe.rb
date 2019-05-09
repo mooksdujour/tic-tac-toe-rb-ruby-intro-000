@@ -56,4 +56,3 @@ def turn
     turn
   end
 end
-
