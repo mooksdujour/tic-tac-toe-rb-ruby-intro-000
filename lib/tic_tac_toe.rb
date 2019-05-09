@@ -53,6 +53,6 @@ def turn(board)
     move(board, position, "O")
     display_board(board)
   else
-    turn
+    turn(board)
   end
 end
