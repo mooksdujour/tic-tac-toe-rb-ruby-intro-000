@@ -114,7 +114,7 @@ def winner(board)
 end
 
 def play(board)
-
+  input = gets
   until over?(board) do
     turn(board)
     won?(board)
